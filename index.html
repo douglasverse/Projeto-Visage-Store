@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet"  href="style.css">
+    <title>VISAGE LE MONDE STORE®</title>
+</head>
+<body> 
+    
+    <nav>
+        <div class="logo">
+            <h1>VISAGE LE MONDE®</h1>
+        </div>
+        <div class="burguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">COLLECTIONS</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        
+    </nav>
+  <section>
+    <h2>POWER YOUR BODY</h2>
+    <a href="#">Explore More<img src="Imgs/search-interface-symbol.png" alt="search-icon"></a>
+  </section>
+<script>
+    
+const burguer = document.querySelector(".burguer");
+const navMenu = document.querySelector(".nav-menu");
+
+burguer.addEventListener("click", ()=>{
+    burguer.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+</script>
+</body>
+</html>
